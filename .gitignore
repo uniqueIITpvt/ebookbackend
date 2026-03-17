@@ -1,0 +1,175 @@
+# =====================================================
+# Dr. Syed M Quadri Backend - .gitignore
+# Node.js/Express API Server
+# =====================================================
+
+# ===== DEPENDENCIES =====
+node_modules/
+jspm_packages/
+bower_components/
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.pnpm-debug.log*
+
+# ===== ENVIRONMENT VARIABLES =====
+.env
+.env.example
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env.staging
+
+# ===== LOGS =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ===== RUNTIME DATA =====
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ===== TESTING & COVERAGE =====
+coverage/
+*.lcov
+.nyc_output
+test-results/
+junit.xml
+.jest/
+__tests__/coverage/
+
+# ===== CACHE DIRECTORIES =====
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+.cache
+.parcel-cache
+.eslintcache
+.stylelintcache
+
+# ===== BUILD OUTPUTS =====
+build/
+dist/
+out/
+.next/
+.nuxt/
+.vuepress/dist/
+
+# ===== DATABASE FILES =====
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+data/
+mongodb/
+redis-dump.rdb
+
+# ===== UPLOADS & MEDIA =====
+uploads/
+public/uploads/
+static/uploads/
+media/
+files/
+
+# ===== BACKUP FILES =====
+backup/
+*.backup
+*.bak
+*.tmp
+*.temp
+
+# ===== IDE & EDITOR FILES =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+.metadata/
+
+# ===== OS GENERATED FILES =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ===== TEMPORARY FILES =====
+tmp/
+temp/
+.tmp/
+.temp/
+
+# ===== SECURITY & KEYS =====
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+private/
+secrets/
+ssl/
+certificates/
+
+# ===== CLOUD & DEPLOYMENT =====
+.serverless/
+.vercel/
+.netlify/
+.firebase/
+.aws/
+.gcp/
+.azure/
+
+# ===== DOCUMENTATION =====
+docs/build/
+docs/dist/
+.docusaurus/
+
+# ===== MONITORING & ANALYTICS =====
+.newrelic/
+newrelic_agent.log
+
+# ===== DOCKER =====
+.dockerignore
+docker-compose.override.yml
+
+# ===== MISC =====
+.fusebox/
+.dynamodb/
+.tern-port
+.yarn-integrity
+*.tgz
+.node_repl_history
+
+# ===== PROJECT SPECIFIC =====
+# YouTube video thumbnails cache
+thumbnails/
+# API documentation generated files
+api-docs/
+# Email templates compiled
+email-templates/dist/
+# PDF generation temp files
+pdf-temp/
+# Image processing temp files
+image-temp/
