@@ -52,7 +52,12 @@ export const config = {
     origin: process.env.CLIENT_URL || 'http://localhost:3000',
     allowedOrigins: Array.from(
       new Set(
-        [process.env.ALLOWED_ORIGINS, process.env.CLIENT_URL]
+        [
+          process.env.ALLOWED_ORIGINS,
+          process.env.CLIENT_URL,
+          'https://ebookfrontend-55ai.vercel.app', // Deployed frontend
+          'https://ebookfrontend.vercel.app', // Alternative deployed frontend
+        ]
           .filter(Boolean)
           .flatMap(v => v.split(','))
           .map(v => v.trim())
@@ -61,7 +66,12 @@ export const config = {
     ).length
       ? Array.from(
           new Set(
-            [process.env.ALLOWED_ORIGINS, process.env.CLIENT_URL]
+            [
+              process.env.ALLOWED_ORIGINS,
+              process.env.CLIENT_URL,
+              'https://ebookfrontend-55ai.vercel.app',
+              'https://ebookfrontend.vercel.app',
+            ]
               .filter(Boolean)
               .flatMap(v => v.split(','))
               .map(v => v.trim())
