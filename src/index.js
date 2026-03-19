@@ -124,10 +124,10 @@ class Server {
     // API information endpoint
     this.app.get('/', (req, res) => {
       res.json({
-        message: 'uniqueIIT Research Center Backend API',
+        message: 'TechUniqueIIT Research Center Backend API',
         description: 'Books API Server',
         version: '1.0.0',
-        author: 'uniqueIIT Research Center',
+        author: 'TechUniqueIIT Research Center',
         status: 'running',
         timestamp: new Date().toISOString(),
         endpoints: {
@@ -190,7 +190,7 @@ class Server {
       // Start server
       this.app.listen(this.port, () => {
         console.log('🚀 =====================================');
-        console.log(`📚 uniqueIIT Research Center Backend Server`);
+        console.log(`📚 TechUniqueIIT Research Center Backend Server`);
         console.log('🚀 =====================================');
         console.log(`🌐 Server running on port ${this.port}`);
         console.log(`📱 Environment: ${config.env}`);
